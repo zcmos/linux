@@ -1,0 +1,22 @@
+sudo rm /var/lib/dpkg/lock-frontend
+
+sudo apt-get -f install
+sudo dpkg -i /home/cl/linuxidc.deb
+
+// 卸载
+sudo apt-get remove
+sudo apt-get autoremove
+sudo apt-get autoremove <name>*
+sudo apt-get autoremove <name> --purge
+
+// 清理依赖(有问题不要用)
+sudo apt autoremove
+
+// 删除非空目录
+sudo rmdir
+
+// 强制删除
+sudo rm -rf
+
+// 显示隐藏文件
+ctrl+h
