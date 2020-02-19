@@ -20,3 +20,21 @@ sudo rm -rf
 
 // 显示隐藏文件
 ctrl+h
+
+找不到库(canberra-gtk-module)
+
+输入
+~$ locate libcanberra-gtk-module.so
+
+在/usr/lib/x86_64-linux-gnu/gtk-3.0/modules/libcanberra-gtk-module.so有安装
+
+建立连接
+~$ sudo ln -s /usr/lib/x86_64-linux-gnu/gtk-3.0/modules/libcanberra-gtk-module.so /usr/lib/libcanberra-gtk-module.so
+
+安装popcorn-time时缺少的库
+sudo apt-get install gconf
+sudo apt-get install --reinstall libcanberra-gtk-module
+sudo apt-get install appmenu-gtk2-module appmenu-gtk3-module
+
+
+
