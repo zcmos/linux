@@ -1,0 +1,20 @@
+// 克隆
+git clone https://github.com/OGRECave/ogre-next.git
+
+// 初始化库
+git init
+
+// 添加远程仓库
+// 添加后，远程库的名字就是origin，这是Git默认的叫法，也可以改成别的
+// 但是origin这个名字一看就知道是远程库
+git remote add -f origin https://github.com/OGRECave/ogre-next.git
+
+// 更新仓库
+// master为分支
+git pull master
+
+// 状态
+git status
+
+// 显示中文文件名的问题
+git config --global core.quotepath false
